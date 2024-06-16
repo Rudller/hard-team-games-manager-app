@@ -1,4 +1,4 @@
-export const Header = () => {
+export default function Header() {
 
 return (
     <header className="flex justify-between items-center bg-orange-950 text-white border-solid border border-transparent p-4">
