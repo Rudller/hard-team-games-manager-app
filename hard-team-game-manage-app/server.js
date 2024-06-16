@@ -23,7 +23,13 @@ const realizationSchema = new mongoose.Schema({
     description: String,
     date: Date,
     people: Number,
-    teams: Number
+    teams: {
+        teamsNumber: Number,
+        teams: [{
+            name: String,
+            color: String
+        }]
+    }
 })
 
 const Realization = mongoose.model("Realization", realizationSchema);
