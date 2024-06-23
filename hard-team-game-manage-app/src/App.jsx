@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './css/App.css'
 import Dev from './pages/Dev'
-import Home from './components/Home'
+import Home from './pages/Home'
 import SingUp from './components/SingUp'
 import SingIn from './components/SingIn'
 

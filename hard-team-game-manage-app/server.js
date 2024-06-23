@@ -62,6 +62,6 @@ app.get("/api/users", (req, res) => {
 app.post("/api/users", (req, res) => {
     const newUser = new User(req.body)
     newUser.save()
-    .then(() => res.status(201).json({ message: 'User created successfully' }))
-    .catch(err => res.status(400).json('Error: ' + err));
+        .then(() => res.status(201).json({ message: 'User created successfully' }))
+        .catch(err => res.status(400).json('Error: ' + err));
 })
