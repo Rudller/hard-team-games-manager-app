@@ -1,12 +1,16 @@
 import Header from "../components/Header";
-import NewRealization from "../components/NewRealization";
+import SingUp from "../components/SingUp";
+//import NewRealization from "../components/NewRealization";
+//import SingIn from "../components/SingIn";
 
 export default function Dev() {
 
     return (
         <>
             <Header />
-            <NewRealization />
+            {/* <NewRealization /> */}
+            {/* <SingIn /> */}
+            <SingUp />
         </>
     )
 }

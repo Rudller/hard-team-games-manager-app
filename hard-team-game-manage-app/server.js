@@ -34,15 +34,34 @@ const realizationSchema = new mongoose.Schema({
 
 const Realization = mongoose.model("Realization", realizationSchema);
 
-app.get("/api/realisations", (req, res) => {
-    
-})
+const User = mongoose.model("User", new mongoose.Schema({
+    username: String,
+    email: String,
+    password: String,
+    role: String,
+    authorized: Boolean,
+}))
 
+// Realizations
 app.post("/api/realizations", (req, res) => {
     const newRealization = new Realization(req.body)
-    console.log(newRealization)
-    
     newRealization.save()
         .then(() => res.status(201).json({ message: 'Realization created successfully' }))
         .catch(err => res.status(400).json('Error: ' + err));
+})
+
+// Users
+app.get("/api/users", (req, res) => {   
+    User.find()
+    .then(users => {
+        res.json(users)
+    })
+    .catch(err => res.status(400).json('Error: ' + err));
+})
+
+app.post("/api/users", (req, res) => {
+    const newUser = new User(req.body)
+    newUser.save()
+    .then(() => res.status(201).json({ message: 'User created successfully' }))
+    .catch(err => res.status(400).json('Error: ' + err));
 })

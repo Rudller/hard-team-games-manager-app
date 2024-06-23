@@ -99,6 +99,7 @@ const handlesubmit = (e) => {
                     return (
                         <div key={i} className="flex flex-col mt-5 mx-5 border border-orange-500 rounded-lg p-2">
                             <p>Drużyna {team.id}</p>
+                            <p>Przypisany instruktor: {team.instructor}</p>
                             <p>Nazwa drużyny: {team.name}</p>
                             <p>Kolor drużyny: {team.color}</p>
                         </div>

@@ -1,6 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './css/App.css'
 import Dev from './pages/Dev'
+import Home from './components/Home'
+import SingUp from './components/SingUp'
+import SingIn from './components/SingIn'
+
 
 function App() {
 
@@ -9,6 +13,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/dev" element={<Dev />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/singup" element={<SingUp />} />
+          <Route path="/singin" element={<SingIn />} />
         </Routes>
       </BrowserRouter>
     </>
