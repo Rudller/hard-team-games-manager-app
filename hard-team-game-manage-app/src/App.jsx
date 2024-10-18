@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './css/App.css'
 import Dev from './pages/Dev'
 import Home from './pages/Home'
-import SingUp from './components/SingUp'
-import SingIn from './components/SingIn'
+import SingUp from './pages/SingUp'
+import SingIn from './pages/SingIn'
 
 
 function App() {

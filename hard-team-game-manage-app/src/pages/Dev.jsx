@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import SingUp from "../components/SingUp";
+import SingUp from "../pages/SingUp";
 //import NewRealization from "../components/NewRealization";
 //import SingIn from "../components/SingIn";
 
